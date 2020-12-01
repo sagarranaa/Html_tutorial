@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styleForm.css">
+    
+</head>
+
+<body>
+    <h2><i> Data Science Internship Form </i></h2>
+    <form action="beckend.php" method="POST">
+        <label for="MyName">Name:</label>
+        <div>
+            <input type="text" name="MyName" id="">
+        </div>
+        <br>
+        <label for="lastName">Last Name:</label>
+        <div>
+            <input type="text" name="lastName" id="">
+        </div>
+        <br>
+        <label for="RollNumber">Experience:</label>
+        <div>
+            <input type="number" name="RollNumber" id="">
+        </div>
+        <br>
+        <label for="Myemail">E-mail:</label>
+
+        <div>
+            <input type="text" name="Myemail" id="">
+        </div>
+        <br>
+        <label for="MyAddress">Address:</label>
+
+        <div>
+            <input type="text" name="MyAddress" id="">
+        </div>
+        <br>
+        <label for="DateTime">Form Submition Date:</label>
+        <div>
+            <input type="date" name="DateTime" id="">
+        </div>
+        <br>
+        <label for="CheckBox">Are You Eligible For Internship?:</label>
+        <div>
+            <input type="checkbox" name="CheckBox" id="">
+        </div>
+        <br>
+        <label for="Radio">Gender:</label>
+        <div>
+            Male<input type="radio" name="Radio" id="" checked>Female <input type="radio" name="Radio" id="">
+        </div>
+        <br>
+        <label for="CheckBox"> How Many Internship you have done ?:</label>
+        <div>
+            1 <input type="checkbox" name="CheckBox" id="" checked> 2 <input type="checkbox" name="CheckBox" id=""> None
+            <input type="checkbox" name="CheckBox" id="">
+        </div>
+<br>
+        <div>
+            <label for="Internship">Intersted Area Interenship?<br><br></rb></label>
+            <select name="Inter" id="Internship">
+                <option value="Machine Learning">Machine Learning</option>
+                <option value="Deep Learning">Deep Learning</option>
+                <option value="Artifical inteligence">Artifical inteligence</option>
+                <option value="cloud">Cloudy</option>
+                <option value="Robotics">Robotics</option>
+                <option value="Ethical Hecking " selected>Ethical Hecking </option>
+                <option value="Cycer Security"> Cycer Security </option>
+                <option value="Developer"> Developer </option>
+                <option value="Software Tester"> Software Tester </option>
+                <br><br>
+            </select>
+        </div>
+        <br><br>
+        <div>
+            <label for="salary">Expected Salary?<br><br></label>
+            <select name="money" id="salary">
+                <option value="2000">2000</option>
+                <option value="3000">3000</option>
+                <option value="4000">4000</option>
+                <option value="5000">5000</option>
+                <option value="6000">6000</option>
+                <option value="700000" selected>700000 </option>
+                <option value="8000"> 8000 </option>
+                <option value="9000"> 9000 </option>
+                <option value="10000"> 10000 </option>
+                <br><br>
+            </select>
+        </div>
+<br><br>
+
+<label for="TEXTAREA">Write About your previous company Feedback</label><br>
+<textarea name="TEXTAREA" id="" cols="30" rows="10"></textarea>
+<br><br>
+        <input type="submit" value="Submit"> <input type="Reset" value="Reset">
+</form>
+</body>
+
+</html>
