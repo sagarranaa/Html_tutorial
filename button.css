@@ -1,0 +1,65 @@
+/* Reset styles for all elements */
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  background: #1a1a1a;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  position: relative;
+  padding: 18px 50px;
+  background: rgb(255, 255, 255);
+  font-size: 20px;
+  letter-spacing: 1px;
+  outline: none;
+  border-radius: 50px;
+  font-weight: 600;
+  border: 2px solid #ffffff;
+  overflow: hidden;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  z-index: 1;
+  color: #000; /* Set the initial text color */
+  transition: color 0.3s, transform 0.3s;
+}
+
+/* Set the initial background color for the button */
+.button::before,
+.button::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 100%;
+  left: 0;
+  z-index: -1;
+  transition: transform 0.3s cubic-bezier(0.75, 0, 0.125, 1);
+}
+
+/* Set the background color during the hover effect */
+.button:hover::before {
+  background: #d3805c;
+  transform: translate(0, 100%);
+}
+
+.button:hover::after {
+  background: #d84d02;
+  transform: translate(0, 100%);
+  transition-delay: 0.18s;
+}
+
+/* Change the text color during the hover effect */
+.button:hover {
+  color: #fff;
+}
